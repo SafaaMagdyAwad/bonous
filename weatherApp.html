@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a  onclick="getLocation()">find weather</a>
+            </li>
+            <li>
+                <a  onclick="showfavplacss()" href="#Mylocations">Show my favourite places</a>
+            </li>
+            <li>
+                <a  onclick="playGame()" href="#play">Play a game</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="x"></div>
+    <div class="container">
+        <form enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>
+                        <p>Enter a title of our favourite place </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="locationtitle">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Enter the link of our favourite place from maps</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="url" id="locationUrl">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="AddPlace" onclick="addUrl()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="Mylocations">
+        <h1>My Favourite Places</h1>
+    </div>
+
+
+    <div id="play"></div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
